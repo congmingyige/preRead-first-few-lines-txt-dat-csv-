@@ -5,3 +5,10 @@
 	<cstring>
 	<io.h>
 
+1530021491 source:f:\fzym_iq\preread\preread\main.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+	<io.h>
+	<windows.h>
+

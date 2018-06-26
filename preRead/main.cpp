@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <cstring>
 #include <io.h>
+#include <windows.h>
 using namespace std;
 
 char addr[200],s[10000],str[100000];
@@ -15,7 +16,7 @@ int main()
     ///1.csv
     ///1.xlsx wrong!
     ///1.doc wrong!
-    scanf("%s",addr);
+    gets(addr);
     if (_access(addr,0)!=-1)
     {
         int i,limitLine;
@@ -38,5 +39,8 @@ int main()
         printf("%s",str);
         fclose(in);
     }
+    else
+        printf("File not exists\n");
+    system("pause");
     return 0;
 }
